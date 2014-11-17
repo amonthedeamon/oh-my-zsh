@@ -128,3 +128,9 @@ highlight ColorColumn ctermbg=DarkGray
 
 " Grep plugin
 let Grep_Default_Options = '-C 5 -i'
+
+" highlight current line/column with \h
+:hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+:hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+:nnoremap <Leader>h :set cursorline! cursorcolumn!<CR>
+"
