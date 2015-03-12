@@ -12,7 +12,11 @@ alias jmake='make -j $cores -l $cores'
 alias gpo='git push origin'
 alias gpob='git push origin $(current_branch)'
 alias grso='git remote show origin'
+alias grs='git remote show'
 alias gk='gitk --all -n 500'
+alias ggg='git gui'
+alias gf='git fetch'
+alias gfo='git fetch origin'
 
 alias screen='grabvars; screen'
 
