@@ -13,7 +13,7 @@ let g:solarized_contrast="high"
 let g:solarized_visibility="high"
 colorscheme solarized
 
-set mouse=a
+"set mouse=a
 set ttymouse=xterm2
 
 
