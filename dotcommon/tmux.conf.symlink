@@ -9,8 +9,8 @@ set -g set-titles on
 set -g set-titles-string "#T"
 
 # window split helper
-bind-key o split-window -v
-bind-key e split-window -h
+bind-key - split-window -v
+bind-key | split-window -h
 
 bind-key w kill-pane
 
