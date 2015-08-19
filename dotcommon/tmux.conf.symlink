@@ -1,0 +1,19 @@
+
+# use CTRL-A as screen
+set -g prefix C-a
+unbind C-b
+bind C-a send-prefix
+
+# configure screen title
+set -g set-titles on
+set -g set-titles-string "#T"
+
+# window split helper
+bind-key o split-window -v
+bind-key e split-window -h
+
+bind-key w kill-pane
+
+# more terminal configuration
+set -g default-terminal $ZSH_TMUX_TERM
+set -g terminal-overrides "xterm*:XT:smcup@:rmcup@"
