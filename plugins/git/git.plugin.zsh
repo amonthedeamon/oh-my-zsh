@@ -150,11 +150,11 @@ alias gke='\gitk --all $(git log -g --pretty=format:%h)'
 compdef _git gke='gitk'
 
 alias gl='git pull'
-alias glg='git log --stat --color'
-alias glgp='git log --stat --color -p'
-alias glgg='git log --graph --color'
-alias glgga='git log --graph --decorate --all'
-alias glgm='git log --graph --max-count=10'
+alias glg='git log --stat --color --decorate=full'
+alias glgp='git log --stat --color -p --decorate=full'
+alias glgg='git log --graph --color --decorate=full'
+alias glgga='git log --graph --decorate=full --all'
+alias glgm='git log --graph --max-count=10 --decorate=full'
 alias glo='git log --oneline --decorate --color'
 alias glol="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias glola="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
