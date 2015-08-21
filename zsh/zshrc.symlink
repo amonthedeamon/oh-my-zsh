@@ -90,3 +90,7 @@ then
 fi
 
 stty -ixon
+
+# search into history not only the first word but everything to the cursor
+bindkey OA history-beginning-search-backward
+bindkey OB history-beginning-search-forward
