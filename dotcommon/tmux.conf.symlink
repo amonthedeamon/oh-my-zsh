@@ -8,6 +8,9 @@ bind C-a send-prefix
 set -g set-titles on
 set -g set-titles-string "#T"
 
+# highlight current window in a more visible way
+set-window-option -g window-status-current-bg red
+
 # window split helper
 bind-key - split-window -v
 bind-key | split-window -h
