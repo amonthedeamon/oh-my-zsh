@@ -22,3 +22,8 @@ set -g terminal-overrides "xterm*:XT:smcup@:rmcup@"
 bind-key -n C-S-Left swap-window -t -1
 # CTRL+SHIFT+Right move window to the right
 bind-key -n C-S-Right swap-window -t +1
+
+
+
+# reload .tmux.conf with ctrl-a+r
+bind-key r source-file ~/.tmux.conf \; display-message "config reloaded"
