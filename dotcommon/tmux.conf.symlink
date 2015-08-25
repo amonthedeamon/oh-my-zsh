@@ -17,3 +17,8 @@ bind-key w kill-pane
 # more terminal configuration
 set -g default-terminal $ZSH_TMUX_TERM
 set -g terminal-overrides "xterm*:XT:smcup@:rmcup@"
+
+# CTRL+SHIFT+Left move window to the left
+bind-key -n C-S-Left swap-window -t -1
+# CTRL+SHIFT+Right move window to the right
+bind-key -n C-S-Right swap-window -t +1
