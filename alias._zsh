@@ -21,6 +21,8 @@ alias glon='git log --oneline --decorate --color | nl | less'
 
 alias screen='grabvars; screen'
 
+alias tad='tmux attach -dt'
+
 alias vi='TERM=xterm-sc vim'
 alias vim='TERM=xterm-sc vim'
 alias vc='$ZSH/tools/vimpager/vimcat'
