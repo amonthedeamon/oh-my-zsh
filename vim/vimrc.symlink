@@ -135,3 +135,11 @@ let Grep_Default_Options = '-C 5 -i'
 :hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 :nnoremap <Leader>h :set cursorline! cursorcolumn!<CR>
 "
+
+"CtrlP
+" project like Linux kernel has a huge amount of files..
+let g:ctrlp_max_files=0
+" invoke with ctrl-p
+let g:ctrlp_map = '<c-p>'
+" use regex mode by default
+let g:ctrlp_regexp = 1
