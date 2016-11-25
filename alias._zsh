@@ -28,3 +28,4 @@ alias vim='TERM=xterm-sc vim'
 alias vc='$ZSH/tools/vimpager/vimcat'
 alias vl='$ZSH/tools/vimpager/vimpager'
 
+alias ssh-no-key='ssh -o PubkeyAuthentication=no'
