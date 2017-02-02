@@ -29,3 +29,5 @@ alias vc='$ZSH/tools/vimpager/vimcat'
 alias vl='$ZSH/tools/vimpager/vimpager'
 
 alias ssh-no-key='ssh -o PubkeyAuthentication=no'
+
+alias myip='curl ipinfo.io/ip'
