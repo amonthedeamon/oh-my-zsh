@@ -42,7 +42,7 @@ local git_branch='$(git_prompt_info)'
 
 PROMPT="╭─${user_host} ${current_dir} ${rvm_ruby} ${git_branch}
 ╰─$PR_PROMPT "
-RPROMPT="${return_code}"
+RPROMPT="${return_code}%{$fg[green]%}[%*]%{$reset_color%}"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%F{yellow}‹"
 ZSH_THEME_GIT_PROMPT_SUFFIX="› %f"
