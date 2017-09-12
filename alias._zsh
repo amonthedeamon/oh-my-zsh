@@ -18,6 +18,7 @@ alias ggg='git gui'
 alias gf='git fetch'
 alias gfo='git fetch origin'
 alias glon='git log --oneline --decorate --color | nl | less'
+alias glob='git pull origin $(current_branch)'
 
 alias screen='grabvars; screen'
 
