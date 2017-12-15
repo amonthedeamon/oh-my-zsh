@@ -76,7 +76,7 @@ set ignorecase    " ignore case when searching
 set smartcase     " ignore case if search pattern is all lowercase,
                   "    case-sensitive otherwise
 
-set smarttab      " insert tabs on the start of a line according to
+"set smarttab      " insert tabs on the start of a line according to
                   "    shiftwidth, not tabstop
 
 " our tab is 4 space width
@@ -143,3 +143,7 @@ let g:ctrlp_max_files=0
 let g:ctrlp_map = '<c-p>'
 " use regex mode by default
 let g:ctrlp_regexp = 1
+
+" Show next matches in middle of screen
+nnoremap n nzz
+nnoremap N Nzz
