@@ -56,6 +56,9 @@ nnoremap <C-s> :w<CR>
 "inoremap <C-Z> <C-o><C-R>
 "nnoremap <C-Z> <C-R>
 
+" CTRL-x as :x
+inoremap <C-x> <C-o>:x<CR>
+nnoremap <C-x> :x<CR>
 
 " open quickfix window when there are errors and close if none is found
 autocmd QuickFixCmdPost [^l]* nested cwindow
