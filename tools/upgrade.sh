@@ -22,6 +22,20 @@ fi
 
 printf "${BLUE}%s${NORMAL}\n" "Updating Oh My Zsh"
 cd "$ZSH"
+
+# migrate from github to gitlab
+
+if git remote -v | grep origin | grep github
+then
+	echo "${YELLOW}Migrate from GitHub to GitLab repos"
+	if git remote -v | grep origin | grep https
+	then
+		git remote set-url origin https://gitlab.com/andreascian/oh-my-zsh
+	else
+		git remote set-url origin git@gitlab.com:andreascian/oh-my-zsh
+	fi
+fi
+
 if git pull
 then
   printf '%s' "$GREEN"
